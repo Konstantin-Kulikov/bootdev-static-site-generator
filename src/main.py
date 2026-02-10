@@ -10,11 +10,11 @@ def main():
     else:
         basepath = '/'
 
-    copy_content(r"/home/konstantin/static_site_generator/bootdev-static-site-generator/static",
+    copy_content(r"static",
                  r"docs")
     #generate_page(basepath, r"content/index.md", r"template.html", r"public/index.html")
     generate_pages_recursive(basepath,
-                             r'/home/konstantin/static_site_generator/bootdev-static-site-generator/content',
+                             r'content',
                              r'template.html',
                              r'docs')
 
