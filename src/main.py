@@ -9,7 +9,6 @@ def main():
         basepath = sys.argv[1]
     else:
         basepath = '/'
-
     copy_content(r"static",
                  r"docs")
     #generate_page(basepath, r"content/index.md", r"template.html", r"public/index.html")
